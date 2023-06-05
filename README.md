@@ -51,6 +51,14 @@ This is a byproduct of the master project, as well. The idea was to train a clas
 
 The classifier created in this project isn't perfect and kind of simple. For more information read the report of the project. It can be a startpoint to create an even better classifier to create a strong feature for the overall task - the reading order.
 
+For training we created our own version of the DocLayNet Dataset. I couldn't upload it to this repository. The structure looks like the following:
+
+``{"image_id": int, "category_str": str, "segment_box": float array, "file_name": str, "font_informationen": int, "text": str}``
+
+An example looks like this:
+
+``{"image_id": 0, "category_str": "Page-header", "segment_box": [72.35294285130719, 444.5686274509804, 55.47565740740731, 75.92855715197959], "file_name": "c6effb847ae7e4a80431696984fa90c98bb08c266481b9a03842422459c43bdd.json", "font_informationen": 1, "text": "NOTES TO THE FINANCIAL STATEMENTS"}``
+
 ## How to use
 
 The dataset used for the training is given. It's in the "datasets" folder for free use. The model used for training is the XGBoost model, because it's a very strong and simple classifier. Feel free to use different models.

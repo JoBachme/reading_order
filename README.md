@@ -1,7 +1,7 @@
 # ReadingBank2Paragraph
 
 This is a byproduct of a university project and the most useable.
-The project itself was about document analysis based on a documents' layout.
+The project itself was about document analysis based on a documents' layout. It is separated to the other byproducts in this repository.
 
 ## How it works
 
@@ -47,9 +47,9 @@ Examples are given in the [example.jsonl](data/example.jsonl)-file.
 
 # Classifier
 
-This is a byproduct of that project, as well. The idea was to train a classifier to classify layout elements as new feature for the reading order. The relation between layout elements and the reading order is given. For example will be a title before a text element or when there is a picture there will be a Caption for most of the cases.
+This is a byproduct of the master project, as well. The idea was to train a classifier to classify layout elements as new feature for the reading order. The relation between layout elements and the reading order is given. For example, a title is normally before a text element and when there is a picture there will be a Caption, as well.
 
-The classifier created in this project isn't perfect and kind of simple. For more information read the report of the project. It can be start to create an even better classifier to get a strong feature for the overall task, the reading order.
+The classifier created in this project isn't perfect and kind of simple. For more information read the report of the project. It can be a startpoint to create an even better classifier to create a strong feature for the overall task - the reading order.
 
 ## How to use
 
@@ -61,10 +61,7 @@ It's a good start to dive deeper into this topic and create an even better model
 For more information, read the report.
 
 ### Installation
-Es wird eine Conda-Installation und ein Evironment mit Python 3.11 benötigt.
-Das nötige Environment lässt sich für die Reading Order wie folgt installieren:
-
-Für den Classifier wird eine andere Environment benötigt:
+I personally use Conda for creating my virtual environments. For the Classifier you need Python 3.11 and the following installation steps:
 ```
 conda create --name masterproject python=3.11
 conda install -c conda-forge opencv
@@ -81,7 +78,8 @@ conda install -c conda-forge tqdm
 # Annotator
 
 It's a tool we created to annotate a custom dataset for the Reading Order.
-You have to download the Doclaynet dataset first and then you can click a reading order together.
+You have to download the Doclaynet dataset first. Afterwards you can click together a reading order and visualize it. It will look like the following example:
+![visualization of program, where you can click together a reading order](annotator/example_image.png)
 
 DocLayNet:
 https://github.com/DS4SD/DocLayNet

@@ -1,0 +1,6 @@
+We created our own dataset for the classifier and trained a xgboost model with it.
+With the first script you can train the model on your own, save it to the "modelle" folder and get a confusion matrix about the model.
+The second file shows the first predictions of the model, to get a feeling about the consistence of the model.
+
+It's a good start to dive deeper into this topic and create an even better model to use it later for the reading order.
+For more information, read the report linked in the readme file.

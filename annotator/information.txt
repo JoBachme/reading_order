@@ -1,0 +1,4 @@
+In this folder you find an annotator for creating your own reading order on the doclaynet dataset.
+You have to change the paths in the files to your datasets location and start annotating.
+When you finished your annotation, press "s" to save the fila as new .jsonl file.
+With "q" you can quit the application.
